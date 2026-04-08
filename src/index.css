@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-minds-cyan: #52BED2;
+  --color-minds-black: #1A202C;
+  --color-minds-grey: #4A5568;
+  --color-minds-light-green: #F0FFF4;
+  --color-minds-red: #E53E3E;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-minds-black font-sans antialiased;
+  }
+  
+  h1, h2, h3 {
+    @apply font-extrabold tracking-tighter uppercase;
+  }
+}
+
+.text-outline {
+  -webkit-text-stroke: 1.5px rgba(0,0,0,0.4);
+  color: transparent;
+}
+
+.text-outline-white {
+  -webkit-text-stroke: 1.5px rgba(255,255,255,0.6);
+  color: transparent;
+}
+
+.minds-button {
+  @apply px-8 py-3 bg-minds-cyan text-white rounded-full font-bold hover:bg-minds-cyan/90 transition-all uppercase text-sm tracking-widest;
+}
+
