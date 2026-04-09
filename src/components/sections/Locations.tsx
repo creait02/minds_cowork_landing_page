@@ -16,10 +16,10 @@ export default function Locations() {
   ];
 
   return (
-    <section className="bg-white py-24 px-6" id="sedes">
+    <section className="bg-[#343434] py-24 px-6" id="sedes">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-minds-black uppercase tracking-tighter mb-4">
+          <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-4">
             NUESTRAS SEDES
           </h2>
           <div className="w-24 h-2 bg-minds-cyan mx-auto rounded-full" />
@@ -33,11 +33,11 @@ export default function Locations() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2 }}
-              className="bg-gray-50 rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-100 flex flex-col"
+              className="bg-[#2F2F2F] rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5 flex flex-col"
             >
               {/* Map Placeholder Area */}
-              <div className="h-80 w-full bg-gray-200 relative group">
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-400 p-8 text-center">
+              <div className="h-80 w-full bg-[#3a3a3a] relative group">
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-500 p-8 text-center">
                   <MapPin className="w-12 h-12 mb-4 opacity-20" />
                   <p className="font-medium text-sm uppercase tracking-widest opacity-40">
                     Espacio para Google Maps
@@ -60,7 +60,7 @@ export default function Locations() {
               {/* Info Area */}
               <div className="p-10 flex flex-col flex-grow">
                 <div className="flex items-start justify-between mb-6">
-                  <h3 className="text-2xl font-black text-minds-black uppercase tracking-tight">
+                  <h3 className="text-2xl font-black text-white uppercase tracking-tight">
                     {sede.name}
                   </h3>
                   <div className="bg-minds-cyan/10 p-3 rounded-2xl text-minds-cyan">
@@ -68,11 +68,11 @@ export default function Locations() {
                   </div>
                 </div>
                 
-                <p className="text-gray-600 text-lg leading-relaxed mb-8 flex-grow">
+                <p className="text-gray-300 text-lg leading-relaxed mb-8 flex-grow">
                   {sede.address}
                 </p>
 
-                <button className="w-full py-4 bg-minds-black hover:bg-minds-cyan text-white font-bold rounded-2xl transition-all duration-300 uppercase tracking-widest text-sm shadow-lg hover:shadow-minds-cyan/20">
+                <button className="w-full py-4 bg-minds-cyan hover:bg-white hover:text-minds-black text-white font-bold rounded-2xl transition-all duration-300 uppercase tracking-widest text-sm shadow-lg hover:shadow-white/10">
                   Ver en Google Maps
                 </button>
               </div>

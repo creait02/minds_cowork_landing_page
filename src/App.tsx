@@ -12,6 +12,7 @@ import Services from './components/sections/Features';
 import NewLocation from './components/sections/NewLocation';
 import Gallery from './components/sections/Gallery';
 import Locations from './components/sections/Locations';
+import InstagramFeed from './components/sections/InstagramFeed';
 import Footer from './components/Footer';
 import { motion } from 'motion/react';
 
@@ -35,6 +36,8 @@ export default function App() {
       <Gallery />
 
       <Locations />
+
+      <InstagramFeed />
 
       <Footer />
     </main>
